@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+
+/*home*/
+.home-page{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/burger.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	padding: 250px 250px;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+/*reservation*/
+.reservation-form-page{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/restaurant.jpg);
+	min-height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.reservation{
+    padding: 150px 250px; 
+}
+.reservation h1{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+.reservation-form{
+	display: grid;
+	grid-template-columns: 420px 420px;
+}
+.card-img{
+	background: url(images/table.jpeg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.card-content{
+	background: #fff;
+	height: 330px;
+}
+.card-content h3{
+	text-align: center;
+	padding: 25px 0px;
+	font-size: 26px;
+	font-weight: 500;
+}
+.form-row{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+form select, form input{
+	display: block;
+	width: 100%;
+	margin: 15px 12px;
+	padding: 5px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #eee;
+	font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+	color: #9a9a9a;
+}
+form input[type = submit]{
+	color: #fff;
+	background: #f2745f;
+	padding: 12px 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+form input[type = submit]:hover{
+	opacity: 0.9;
+}
+
+/*menu*/
+.menu-page{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/menu.jpg);
+	min-height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.menu{
+	padding-top: 100px;
+	color: #fff;
+}
+.menu-title{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.menu-title h4{
+	text-transform: uppercase;
+	font-size: 36px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.menu-title h4 span{
+	display: block;
+	font-size: 18px;
+	font-style: italic;
+	margin-bottom: -10px;
+}
+.menu-title h4:before{
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 2px;
+	background-color: #ff7720;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.menu-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.single-menu{
+	flex-basis: 550px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ff7720;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.single-menu img{
+	max-width: 180px;
+	margin-right: 30px;
+	border-radius: 50%;
+	border: 1px solid #ff7720;
+	padding: 3px;
+	transition: .5s;
+}
+.single-menu:hover img{
+	border-radius: 0;
+}
+.single-menu:nth-child(7), .single-menu:nth-child(8){
+	border-bottom: 0;
+}
+.single-menu h4{
+	text-transform: uppercase;
+	font-size: 22px;
+	border-bottom: 1px dashed #ff7720;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.single-menu h4 span{
+	float: right;
+	color: #ff7720;
+	font-style: italic;
+}
+
+/*contact*/
+.contact-page{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/restaurant.jpg);
+	min-height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.contact{
+    padding: 150px 250px; 
+}
+.contact h1{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+.contact-part{
+	display: grid;
+	grid-template-columns: 420px 420px;
+}
+.card-img{
+	background: url(images/table.jpeg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.address{
+	background: #fff;
+	height: 330px;
+}
+.address h3{
+	text-align: center;
+	padding: 25px 0px;
+	font-size: 26px;
+	font-weight: 500;
+}
+.address p{
+	margin-left: 30px;
+}
